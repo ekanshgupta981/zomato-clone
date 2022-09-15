@@ -14,7 +14,7 @@ function SearchPage() {
 
   let getFilterDetails = async (_filter) => {
     _filter = { ..._filter };
-    let URL = "http://localhost:4000/api/filter";
+    let URL = "https://zomato-clone-api-2.herokuapp.com/api/filter";
 
     // filter //
 
@@ -33,7 +33,7 @@ function SearchPage() {
     }
   };
   let getLocationList = async () => {
-    let URL = "http://localhost:4000/api/get-location";
+    let URL = "https://zomato-clone-api-2.herokuapp.com/api/get-location";
     try {
       let response = await axios.get(URL);
       let data = response.data;

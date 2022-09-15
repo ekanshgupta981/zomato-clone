@@ -20,7 +20,9 @@ function Wallpaper() {
       setLocList([]);
       return false;
     }
-    let URL = "http://localhost:4000/api/get-location-by-city?name=" + city;
+    let URL =
+      "https://zomato-clone-api-2.herokuapp.com/api/get-location-by-city?name=" +
+      city;
     try {
       let response = await axios.get(URL);
       let { locationList } = response.data;
@@ -49,7 +51,7 @@ function Wallpaper() {
       setRestList([]);
       return false;
     }
-    let URL = `http://localhost:4000/api/get-restaurant-by-location-id/?lid=${selectLoc.location_id}&rest=${restaurant}`;
+    let URL = `https://zomato-clone-api-2.herokuapp.com/api/get-restaurant-by-location-id/?lid=${selectLoc.location_id}&rest=${restaurant}`;
 
     try {
       let response = await axios.get(URL);

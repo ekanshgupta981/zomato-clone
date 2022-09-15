@@ -52,7 +52,7 @@ export default function Restaurant() {
       return false;
     }
 
-    let URL = "http://localhost:4000/api/payment";
+    let URL = "https://zomato-clone-api-2.herokuapp.com/api/payment";
     let sendData = {
       amount: subTotal,
       email: emailRef.current.value,
@@ -71,7 +71,7 @@ export default function Restaurant() {
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/Zomato_Logo.jpg",
       order_id: order.id,
       handler: async function (response) {
-        let URL = "http://localhost:4000/api/callback";
+        let URL = "https://zomato-clone-api-2.herokuapp.com/api/callback";
         let sendData = {
           payment_id: response.razorpay_payment_id,
           order_id: response.razorpay_order_id,
@@ -101,7 +101,9 @@ export default function Restaurant() {
   };
 
   let getRestaurantDetails = async () => {
-    let URL = "http://localhost:4000/api/get-restaurant-by-id/" + params.id;
+    let URL =
+      "https://zomato-clone-api-2.herokuapp.com/api/get-restaurant-by-id/" +
+      params.id;
     try {
       let response = await axios.get(URL);
       let data = response.data;
@@ -117,7 +119,9 @@ export default function Restaurant() {
     }
   };
   let getMenuList = async () => {
-    let URL = "http://localhost:4000/api/get-menuitems?resid=" + params.id;
+    let URL =
+      "https://zomato-clone-api-2.herokuapp.com/api/get-menuitems?resid=" +
+      params.id;
     try {
       let response = await axios.get(URL);
       let data = response.data;
