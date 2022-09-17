@@ -62,7 +62,7 @@ export default function Restaurant() {
     let { order } = data;
 
     var options = {
-      key: "rzp_test_131XHboi0nUsjH",
+      key: "rzp_test_acWoqsX0P1QU3u",
       amount: order.amount,
       currency: "INR",
       name: "Zomato Clone Payment",
@@ -327,7 +327,7 @@ export default function Restaurant() {
                 aria-label="Close"
               ></button>
             </div>
-            <form>
+           
               <div className="modal-body">
                 <div className="mb-3">
                   <label
@@ -389,7 +389,7 @@ export default function Restaurant() {
                   PROCEED
                 </button>
               </div>
-            </form>
+            
           </div>
         </div>
       </div>
