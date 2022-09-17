@@ -82,7 +82,7 @@ export default function Restaurant() {
         if (data.status === true) {
           Swal.fire({
             icon: "success",
-            title: "Login Successful",
+            title: "Payment Successful",
           }).then(() => {
             window.location.assign("/"); //send home page
           });
