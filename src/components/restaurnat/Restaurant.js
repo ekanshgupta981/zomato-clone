@@ -71,7 +71,7 @@ export default function Restaurant() {
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/Zomato_Logo.jpg",
       order_id: order.id,
       handler: async function (response) {
-        let URL = "https://zomato-clone-api-2.herokuapp.com/api/callback";
+        let URL = "https://zomato-api.vercel.app/api/callback";
         let sendData = {
           payment_id: response.razorpay_payment_id,
           order_id: response.razorpay_order_id,
@@ -102,7 +102,7 @@ export default function Restaurant() {
 
   let getRestaurantDetails = async () => {
     let URL =
-      "https://zomato-clone-api-2.herokuapp.com/api/get-restaurant-by-id/" +
+      "https://zomato-api.vercel.app/api/get-restaurant-by-id/" +
       params.id;
     try {
       let response = await axios.get(URL);
