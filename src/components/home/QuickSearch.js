@@ -5,7 +5,7 @@ import QuickSearchItem from "./QuickSearchItem";
 function QuickSearch() {
   let [mealType, setMealType] = useState([]);
   let getQuickSearchData = async () => {
-    let URL = "https://zomato-clone-2.netlify.app/api/get-meal-type"; // url from zomato APi (backend)
+    let URL = "https://zomato-api.vercel.app/api/get-meal-type"; // url from zomato APi (backend)
     try {
       let response = await axios.get(URL);
       let { meal_type, status } = response.data;
