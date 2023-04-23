@@ -52,7 +52,7 @@ export default function Restaurant() {
       return false;
     }
 
-    let URL = "https://zomato-clone-api-2.herokuapp.com/api/payment";
+    let URL = "https://zomato-api.vercel.app/api/payment";
     let sendData = {
       amount: subTotal,
       email: emailRef.current.value,
@@ -120,7 +120,7 @@ export default function Restaurant() {
   };
   let getMenuList = async () => {
     let URL =
-      "https://zomato-clone-api-2.herokuapp.com/api/get-menuitems?resid=" +
+      "https://zomato-api.vercel.app/api/get-menuitems?resid=" +
       params.id;
     try {
       let response = await axios.get(URL);
