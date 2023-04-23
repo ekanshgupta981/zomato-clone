@@ -14,7 +14,7 @@ function SearchPage() {
 
   let getFilterDetails = async (_filter) => {
     _filter = { ..._filter };
-    let URL = "https://zomato-clone-api-2.herokuapp.com/api/filter";
+    let URL = "https://zomato-api.vercel.app/api/filter";
 
     // filter //
 
@@ -33,7 +33,7 @@ function SearchPage() {
     }
   };
   let getLocationList = async () => {
-    let URL = "https://zomato-clone-api-2.herokuapp.com/api/get-location";
+    let URL = "https://zomato-api.vercel.app/api/get-location";
     try {
       let response = await axios.get(URL);
       let data = response.data;
