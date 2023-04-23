@@ -51,7 +51,7 @@ function Wallpaper() {
       setRestList([]);
       return false;
     }
-    let URL = `https://zomato-clone-api-2.herokuapp.com/api/get-restaurant-by-location-id/?lid=${selectLoc.location_id}&rest=${restaurant}`;
+    let URL = `https://zomato-api.vercel.app/api/get-restaurant-by-location-id/?lid=${selectLoc.location_id}&rest=${restaurant}`;
 
     try {
       let response = await axios.get(URL);
