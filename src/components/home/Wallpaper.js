@@ -21,7 +21,7 @@ function Wallpaper() {
       return false;
     }
     let URL =
-      "https://zomato-clone-api-2.herokuapp.com/api/get-location-by-city?name=" +
+      "https://zomato-api.vercel.app/api/get-location-by-city?name=" +
       city;
     try {
       let response = await axios.get(URL);
