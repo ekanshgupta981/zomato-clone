@@ -138,6 +138,7 @@ export default function Restaurant() {
   };
   useEffect(() => {
     getRestaurantDetails();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   useEffect(() => {
