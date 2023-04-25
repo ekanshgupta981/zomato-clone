@@ -81,8 +81,8 @@ function SearchPage() {
   };
 
   useEffect(() => {
-    getLocationList();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    getLocationList();
   }, []);
 
   useEffect(() => {
